@@ -10,6 +10,7 @@ namespace WebDriverTask1
         public Tests()
         {
             driver = new EdgeDriver();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
         }
 
         [Fact]

@@ -4,14 +4,14 @@ namespace WebDriverTask1
 {
     public class HomePage
     {
-        private IWebDriver driver;
+        private readonly IWebDriver driver;
 
         // Locators
-        private By newPasteTextArea = By.Id("postform-text");
-        private By pasteExpirationDropdown = By.XPath("//span[@id='select2-postform-expiration-container']");
-        private By pasteExpirationOption = By.XPath("//li[text()='10 Minutes']");
-        private By pasteNameInput = By.Id("postform-name");
-        private By createNewPasteButton = By.XPath("//button[contains(text(),'Create New Paste')]");
+        private readonly By newPasteTextArea = By.Id("postform-text");
+        private readonly By pasteExpirationDropdown = By.XPath("//span[@id='select2-postform-expiration-container']");
+        private readonly By pasteExpirationOption = By.XPath("//li[text()='10 Minutes']");
+        private readonly By pasteNameInput = By.Id("postform-name");
+        private readonly By createNewPasteButton = By.XPath("//button[contains(text(),'Create New Paste')]");
 
         public HomePage(IWebDriver driver)
         {
